@@ -4,7 +4,7 @@ if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env'
 function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
-module.exports = {
+module.exports = {   
 SESSION_ID: process.env.SESSION_ID === undefined? "YrsQhLSA#G1w3a8Yw1-lT1i_zjDhus3_7X1BivAe0cIx_A1_tp2Y":process.env.SESSION_ID,
 MONGODB: process.env.MONGODB || "mongodb://mongo:sOHNayjPOyILseyESbOkSRrWgBxotDYB@switchyard.proxy.rlwy.net:36507",
 GEMINI_API_KEY: process.env.GEMINI_API_KEY || "AIzaSyDzyQ7tnQkquWX8bc1y9TE0auCHbC_QQO8",
